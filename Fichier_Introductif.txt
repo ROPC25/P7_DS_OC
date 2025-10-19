@@ -1,0 +1,17 @@
+**Fichier introductif sur l’organisation du dépôt**
+
+Dépôt des sources : https://github.com/ROPC25/P7_DS_OCR
+Lien API : https://p7-ds-ocr-api.onrender.com
+Lien DASHBOARD : https://p7-ds-ocr-dashboard.onrender.com
+
+Ce repository est structuré comme suit :
+* Dossier « .github\workflows » : Contient le code de lacement des tests et du déploient automatique sur Cloud concernant DASHBOARD et API (lancer render-deploy.yml).
+* Dossier « Deployment » : Contient tout les éléments à déployer sur Cloud : Script (API_01_G10.py ; Dashboard_01_G10.py) + fichiers nécessaires au fonctionnement de DASHBOARD et API (requirements_dashboard.txt ; requirements_api.txt ; .csv ...)
+* Dossier « Scripts » : Contient les Script à exécuter pour démarrer le DASHBOARD et l'API en localhost (lancer Run_Localhost_API_Dashboard.ipynb). 
+* Dossier « Notebooks » :  Contient les notebooks (EDA.ipynb ;  MODEL.ipynb) et les fonctions (Functions_Tools_EDA.py ; Functions_Tools_Features.py) nécessaires à l'élaboration du jeu de données final (data_clean.csv) et à l’élaboration des différents modèles de classification.
+* Dossier « Simulations » : Comprend le meilleur modèle sélectionné (BestModel.pkl) et les données des clients (Data_original ; Data_processed), qui seront utilisées par les différents notesbooks et scripts.
+* Dossier « MLflow_Tracking » : Rassemble tous les enregistrements MLflow (mlruns) relatifs aux modèles de classification (lancer Run_Mlflow_UI.ipynb pour une visualisation des résultats sur l’interface MLflow UI)
+* Dossier « Tests-Unitaires » : Contient deux scripts pour des tests unitaires, l'un pour l'API (Test_API.py) et l'autre pour le DASHBOARD (Test_Dashboard.py). (lancer Run_Test_API_Dashboard.ipynb si besoin d’une exécution automatique de l’ensemble des tests).
+* Dossier « Data-drift » : Contient le script (Data_Drift.py) pour évaluer le Data-Drift avec evidently et un fichier HTML présentant les résultats de cette analyse (data_drift_report.html).
+* Fichier « RIADI_Riad_note_méthodologie_052025.pdf » : Ce document explique la démarche de modélisation adopté pour réaliser ce projet.
+* Fichier « RIADI_Riad_presentation_502025.pptx »:  C’est le support de présentation PowerPoint pour la soutenance du projet.
